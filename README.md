@@ -1,6 +1,3 @@
-# job-market-trends-data-roles
-Analysis of U.S. job postings datasets to uncover top roles, skills, and locations in tech.
-
 # 📊 Job Market Trends in Tech (U.S. Data Roles)
 
 ## 🔎 Project Overview
@@ -24,21 +21,21 @@ Datasets were sourced from [Kaggle](https://www.kaggle.com/) (all publicly avail
 - [Jobs in Data (130K job descriptions, 2023)](https://www.kaggle.com/datasets/narsil/jobs-in-data-com)  
 - [Comprehensive Data Science Job Listings](https://www.kaggle.com/datasets/brsahan/data-science-job)
 
-> ⚠️ Note: I did **not upload raw data** into this repo, since these datasets are already public on Kaggle. Instead, I provide links and my cleaned dataset with only essential fields.
+⚠️ Note: I did **not upload raw data** into this repo, since these datasets are already public on Kaggle. Instead, I provide links and my cleaned dataset with only essential fields.
 
 ---
 
 ## 🛠️ Tools & Skills
-- **Python** (Pandas, NumPy, Matplotlib, Regex)
-- **Google Colab** for cloud-based analysis
-- **Data cleaning & deduplication**
-- **Text mining** (keyword frequency for skills)
-- **Geospatial analysis & visualization** (state-level job distribution)
+- **Python** (Pandas, NumPy, Matplotlib, Regex)  
+- **Google Colab** for cloud-based analysis  
+- **Data cleaning & deduplication**  
+- **Text mining** (keyword frequency for skills)  
+- **Geospatial analysis & visualization** (state-level job distribution)  
 
 ---
 
 ## 🧹 Data Cleaning
-Steps I performed:
+Steps I performed:  
 - Loaded 5 separate datasets and standardized column names  
 - Coalesced different title/role/description/location fields into unified columns  
 - Dropped duplicates and rows with missing job titles  
@@ -49,15 +46,24 @@ Steps I performed:
 ---
 
 ## 📊 Key Insights
-1️⃣ **Most In-Demand Roles:** Top roles include **[Your Top 3 Titles]**  
-2️⃣ **Most Requested Skills:** Leading skills are **[Your Top 5 Skills]**  
-3️⃣ **Job Openings by Location:** Major hiring hubs are **[Your Top 5 States]**  
-*(Note: ~[X]% of postings didn’t specify a location, so results are based on valid U.S. locations only.)*
+1️⃣ **Most In-Demand Roles:** Top roles include **Data Engineer, Data Scientist, Data Analyst**  
+2️⃣ **Most Requested Skills:** Leading skills are **r, Machine Learning, SQL, Python**  
+3️⃣ **Job Openings by Location:** Major hiring hubs are **California, Texas, New York, Virginia**  
+
+*(Note: ~43% of postings didn’t specify a location, so results are based on valid U.S. postings only.)*  
 
 ---
 
-## 📈 Visuals
-*(Insert screenshots from Colab here — e.g. bar charts for top roles, skills, and locations)*  
+## 📊 Visuals
+
+![Top Roles](top_roles.png)  
+*Top 15 most in-demand job titles*  
+
+![Top Skills](top_skills.png)  
+*Most requested skills across job descriptions*  
+
+![Top States](top_states.png)  
+*Top U.S. states hiring for data roles (excluding unknown/remote)*  
 
 ---
 
@@ -73,17 +79,13 @@ This project strengthened my skills in:
 - Data cleaning at scale  
 - Text mining for skill extraction  
 - Geospatial analysis  
-- Communicating insights for non-technical stakeholders  
-
-Excited to keep building projects that connect **data analytics & real-world career strategy** 🚀  
+- Communicating insights to stakeholders  
 
 ---
 
-### 💡 How to Run
-```python
-# Upload CSVs to Colab
-from google.colab import files
-uploaded = files.upload()
+## 💡 How to Run
+1. Upload CSVs into Google Colab.  
+2. Run the notebook cells (Python 3, Pandas, Matplotlib).  
+3. Visualizations and cleaned data will be generated inline.  
 
-# Install requirements
-!pip install pandas matplotlib
+---
